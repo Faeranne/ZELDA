@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    {{#scripts}}
+    <script src="{{url}}"></script>
+    {{/scripts}}
+  </head>
+  <body>
+    <div class="pull-left well" data-spy="affix" data-offset-top="200" style="width:10%">
+      <ul class="nav nav-list">
+        <li class="nav-header">Welcome</li>
+        {{#Navigation}}
+          <li><a href="{{url}}">{{title}}</a></li>
+        {{/Navigation}}
+      </ul>
+    </div>
+    <div class="hero-unit pull-right" style="width:80%">
+	    <h1>{{ title }}</h1>
+	    <p>Welcome to {{ title }}</p>
+    </div>
+  </body>
+</html>
